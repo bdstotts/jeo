@@ -1,0 +1,167 @@
+body{
+    height: 100vh;
+    margin:0px;
+    background-color: rgb(88, 44, 256);
+}
+
+*{
+   /* border: black solid 1px;*/
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Korinna'; /*a name to be used later*/
+    src: url('Korinna/ITC_\ Korinna\ Normal.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Swiss";
+    src: url(Swiss\ 921\ BT.ttf);
+}
+
+#main{
+    height:100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr 3fr 15fr;
+}
+
+#scoreBoard{
+/*height: 2em;*/
+display: grid;
+grid-template-columns: repeat(auto, 1fr);
+grid-auto-flow: column;
+}
+
+.scoreBox{
+    display: flex;
+    justify-content: left;  
+    align-items: center;
+    padding-left: 1em;
+    background-color: rgb(0, 0, 190);
+    color: white;
+    border: black 1px solid;
+    font-size: 1.4em;
+}
+
+.selected{
+    border:  greenyellow 4px solid;
+}
+
+.score{
+    display: inline-flex;
+}
+
+#mediaBox{
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: 1em 1fr 1fr;
+    grid-auto-flow: column;
+    height: 1.5em;
+   align-items: center;
+    /*justify-content: center;*/
+}
+
+#checkDiv{
+    display: grid;
+    grid-template-columns: 2em 1fr 2em 1fr;
+    grid-template-rows: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    height:1.5em;
+    width: 5em;
+}
+
+.double{
+    background-color: rgb(88, 44, 250);
+    height: 1em;
+    width: 1em;
+    justify-self: start;
+}
+
+#catBoard{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /*grid-template-rows: 175px;*/
+    border: black solid 2px
+}
+
+.category{
+    text-align: center;
+    text-justify: Center;
+
+}
+
+#board{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(5,1fr);
+    border: black 2px solid;
+}
+
+.square{
+    display: flex;
+    color:white;
+    background-color: rgb(0, 0, 190);
+   /* height: 200px;
+    width: 500px;*/
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+}
+
+.money{
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 4em;
+    color: rgb(255, 187, 0);    
+}
+
+.question{
+    font-family:"Korinna" ;
+    color: white;
+    font-weight: 600;
+}
+
+.category{
+    font-family: "Swiss";
+    color: white;
+    font-size: 2em;
+}
+
+#dialogBody{
+    /*height:90%;
+    width:95%;*/
+    display:grid;
+    gap:5px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2,1fr);
+    align-items: start;
+    justify-items: left;
+    padding-top: 5%;
+    padding-left:10%;
+ }
+
+ #close{
+    height: 3em;
+    width: 6em;
+    justify-self: start;
+ }
+
+ #play{
+    justify-self: end;
+ }
+
+ ::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
