@@ -12,3 +12,5 @@ Then press "submit" to add the dollar amount to their scores.
 A double jeopardy button is hidden on the bar where the play and submit buttons are. It is barely a different color from the background and is found on the far left side. 
 
 Does not include Daliy Double or Final Jeopardy. Darn it. 
+
+This game is perfect for family gatherings or work functions as a team building exercise or just for fun.
