@@ -74,11 +74,16 @@ button{
     width: 5em;
 }
 
-.double{
-    background-color: rgb(88, 44, 250);
+.double,.triple{
+    background-color: rgb(44, 219, 250);
     height: 1em;
     width: 1em;
     justify-self: start;
+}
+
+.triple{
+    background-color: brown;
+
 }
 
 #catBoard{
